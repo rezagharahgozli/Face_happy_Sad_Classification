@@ -35,7 +35,9 @@ if uploaded_file is not None:
 
     st.write(f"Prediction score: {prediction:.4f}")
 
-    if prediction >= 0.5:
+    if  0.5>=prediction:
         st.success("Result: Happy")
+        st.balloons()
     else:
         st.error("Result: Sad")
+        st.snow()
